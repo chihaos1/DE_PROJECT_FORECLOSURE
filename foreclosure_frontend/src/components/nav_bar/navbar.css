@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "CooperHewitt";
+	font-weight: 100;
+	src: url("../../assets/fonts/CooperHewitt-Heavy.otf");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 200;
+	src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 300;
+	src: url("../../assets/fonts/Poppins-Light.ttf");
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  font-weight: 300;
+  justify-content: space-around;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.navbar-text{
+  text-align: center;
+}
+
+#property-count{
+  display: inline;
+  font-weight: 100;
+}
+
+#backarrow{
+  align-self: flex-start;
+  content: url('../../assets/images/Arrow-Thick-Left-3--Streamline-Ultimate.svg');
+  margin-left: 2em;
+  /* position: absolute; */
+}
+
+#backarrow:hover{
+  cursor:pointer;
+  transform: scale(0.8);
+  transition: 0.1s
+}

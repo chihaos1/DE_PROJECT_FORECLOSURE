@@ -1,0 +1,48 @@
+html {
+  background-color: #e5e5f7;
+  /* opacity: 0.8; */
+  background-image:  radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#000000 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  display: flex;
+  min-height:90%;
+}
+
+#root {
+  width: 100%;
+}
+
+.search-components{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height:95%;
+}
+
+.property-cards-components{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height:95%;
+  
+}
+
+.tooltips-container{
+  align-self: flex-start;
+  display: flex;
+  margin-top: 2em;
+  order: 2;
+}
+
+#backarrow{
+  align-self: flex-start;
+  content: url('./assets/images/Arrow-Thick-Left-3--Streamline-Ultimate.svg');
+  margin-left: 2em;
+  /* position: absolute; */
+}

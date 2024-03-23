@@ -1,0 +1,130 @@
+@font-face {
+	font-family: "Poppins";
+	font-weight: 200;
+	src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 300;
+	src: url("../../assets/fonts/Poppins-Light.ttf");
+}
+
+.property-card{
+  background: rgba(255, 255, 255, 0.35);
+  border: 3px solid rgb(0, 0, 0);
+	/* border: 5px solid rgba(255, 255, 255, .25); */
+  border-radius:20px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
+  color: black;
+  flex-grow: 0;
+  font-family: "Poppins";
+	font-size: 0.8em;
+  font: bolder;
+	font-weight: 300;
+  height: 40em;
+  margin: 4em;
+  /* margin-top: 2em; */
+  overflow: hidden;
+  transition: 0.5s;
+  width: 20em;
+  
+}
+
+.property-card:hover{
+  box-shadow: 0 0 5px #ffffff;
+  cursor:pointer;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.property-card-empty{
+  visibility: hidden;
+}
+
+.img-container{
+  display: flex;
+  height: 40%;
+  width: 100%;
+  overflow: hidden;
+}
+
+img{
+  border-radius: 10px 10px 0px 0px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1.5);
+  width:100%;
+}
+
+.property-container{
+  height: 60%;
+  padding: 1em;
+}
+
+.property-address{
+  height: 30%;
+}
+
+.property-street-name{
+  font-family: "Poppins";
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+.property-details-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 50%;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.property-details{
+  height: 25%;
+  width: 30%;
+  
+}
+
+.price{
+  margin-left: 1.5em;
+  content: url('../../assets/images/Money-Bag-Dollar--Streamline-Ultimate.svg');
+}
+
+.year-built{
+  margin-left: 1.5em;
+  content: url('../../assets/images/Calendar--Streamline-Ultimate.svg');
+}
+
+.property-type{
+  margin-left: 1.5em;
+  content: url('../../assets/images/Area-Type--Streamline-Ultimate.svg');
+}
+
+.square_feet{
+  margin-left: 1.5em;
+  content: url('../../assets/images/Self-Playing-Area--Streamline-Ultimate.svg');
+}
+
+
+.bedroom{
+  margin-left: 1.5em;
+  content: url('../../assets/images/Hotel-Bed--Streamline-Ultimate.svg');
+}
+
+.bathroom{
+  margin-left: 1.5em;
+  content: url('../../assets/images/Toilet-Seat-1--Streamline-Ultimate.svg');
+}
+
+
+.property-data{
+  margin: 0;
+  /* margin-left: 1em; */
+  text-align: center;
+
+}
+

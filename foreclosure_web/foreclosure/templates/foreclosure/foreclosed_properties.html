@@ -1,0 +1,22 @@
+{% extends 'main.html'%}
+
+{% block content %}
+
+<div>
+  <h2>Foreclosed Properties</h2>
+	<div>
+		{% for property in properties %}
+			<div>
+				<h3>{{property.street_name}}</h3>
+				<span>Represented by {{property.agent.agent_name}}</span>
+			</div>
+		{% endfor %}
+	</div>
+
+</div>
+
+{% endblock%}
+
+
+
+<!-- <a href="{% url 'display_foreclosure' property.street_name %}"> </a>-->

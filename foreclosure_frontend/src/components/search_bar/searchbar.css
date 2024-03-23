@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "CooperHewitt";
+	font-weight: 100;
+	src: url("../../assets/fonts/CooperHewitt-Heavy.otf");
+}
+
+@font-face {
+	font-family: "CooperHewitt";
+	font-weight: 200;
+	src: url("../../assets/fonts/CooperHewitt-Light.otf");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 100;
+	src: url("../../assets/fonts/Poppins-Black.ttf");
+}
+
+.search-bar-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+	transition: 0.5s;
+}
+
+h1 {
+	color: black;
+	font: bold;
+	font-family: "Poppins";
+	font-weight: 100;
+	text-align: center;
+}
+
+input {
+	align-self: center;
+	background: rgba(255, 255, 255, 0.1);
+	border: 2px solid black;
+	border-radius:10px;
+	color: black;
+	font-family: "CooperHewitt";
+	font-size: 1em;
+	font-weight: 200;
+	height: 2em;
+	min-width: 50%;
+	outline: none;
+	padding-left: 0.5em;
+	text-align: center;
+}
+
+.input-content{
+	align-self: center;
+	bottom:2em;
+	color: black;
+	font-family: "CooperHewitt";
+	font-size: 0.8em;
+	font-weight: 200;
+	position: relative;
+	transition: opacity 0.5s ease;
+}
+
+input:valid ~ .input-content,
+input:focus ~ .input-content,
+input:hover ~ .input-content{
+	opacity: 0;
+	transform: translateY(1.3em);
+	transition: 0.5s;
+}
+
+.loader{
+	align-self: center;
+	animation: loading 0.75s ease infinite;
+	border: 5px solid black;
+	border-top-color: rgba(229,229,247,255);
+	border-radius: 50%;
+	height: 1em;
+	position: absolute;
+	margin-top: 10em;
+	width: 1em;
+}
+
+.loader--hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+
+@keyframes loading {
+	from {transform: rotate(0turn)}
+	to  {transform: rotate(1turn)}
+}
+

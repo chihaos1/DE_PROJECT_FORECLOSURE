@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+setuptools = "*"
+requests = "*"
+asyncio = "*"
+python-dotenv = "*"
+psycopg2 = "*"
+selectolax = "*"
+httpx = "*"
+openpyxl = "*"
+django = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
