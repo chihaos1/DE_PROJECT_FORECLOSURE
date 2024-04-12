@@ -7,7 +7,7 @@ class EquatorProperties(models.Model):
 	street_name = models.CharField(max_length=255,blank=True)
 	city = models.CharField(max_length=100,blank=True)
 	state = models.CharField(max_length=50,blank=True)
-	zip = models.CharField(max_length=5,blank=True)
+	zip = models.CharField(max_length=10,blank=True)
 	county_name = models.CharField(max_length=100,blank=True)
 	listed_price = models.CharField(max_length=100,blank=True)
 	year_built = models.CharField(max_length=4,blank=True)
