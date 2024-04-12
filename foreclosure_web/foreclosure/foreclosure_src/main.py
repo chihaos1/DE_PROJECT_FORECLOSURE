@@ -16,10 +16,10 @@ async def entrypoint(location: str | int) -> None:
     """
     t1_start = perf_counter() 
     await delete_current_records()
-    scrape_website_tasks = [asyncio.create_task(equ_extract_data(location)),
-                            asyncio.create_task(rea_main(location))]
-    await asyncio.gather(*scrape_website_tasks)
-    # await asyncio.gather(equ_extract_data(location))
+    # scrape_website_tasks = [asyncio.create_task(equ_extract_data(location)),
+    #                         asyncio.create_task(rea_main(location))]
+    # await asyncio.gather(*scrape_website_tasks)
+    await asyncio.gather(equ_extract_data(location))
     # await asyncio.gather(rea_main(location))
     t1_stop = perf_counter()
     print("Elapsed time:", t1_stop-t1_start) 
