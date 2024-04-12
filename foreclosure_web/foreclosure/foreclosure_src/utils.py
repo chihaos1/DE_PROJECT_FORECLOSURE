@@ -3,11 +3,11 @@ import psycopg2
 
 async def delete_current_records():
 
-	conn = psycopg2.connect(host = os.getenv("DB_HOST"),
-													dbname = os.getenv("DB_NAME"),
-													user = os.getenv("DB_USER"),
-													password = os.getenv("DB_PASSWORD"),
-													port = os.getenv("DB_PORT"))
+	conn = psycopg2.connect(host = "foreclosure-db.cq6va2rd6fnp.us-east-1.rds.amazonaws.com",
+													dbname = "foreclosure",
+													user = "csheng",
+													password = "Orientatio135!",
+													port = "5432")
 
 	cur = conn.cursor()
 
