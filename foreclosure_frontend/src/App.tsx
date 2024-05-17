@@ -25,7 +25,7 @@ function App() {
 
   const ScrapeExport = async (location: string) => {
     const response = await axios.get(
-      `http://3.81.170.173:8000/foreclosure/scrape/${location}`,
+      `http://54.172.192.216:8000/foreclosure/scrape/${location}`,
       { responseType: "arraybuffer" }
     );
     let blob = new Blob([response.data], {
@@ -39,7 +39,7 @@ function App() {
   };
 
   const FetchData = async () => {
-    const response = await axios.get("http://3.81.170.173:8000/foreclosure");
+    const response = await axios.get("http://54.172.192.216:8000/foreclosure");
     let properties = response.data.map((item) => item);
     console.log(properties)
     if (properties.length % 5 !== 0) {

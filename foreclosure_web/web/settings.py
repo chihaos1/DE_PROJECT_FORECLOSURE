@@ -22,12 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+SECRET_KEY = 'django-insecure-myelq%!45&69h@cg^&$b9wmg*j0)!s9x+_!+x2kg&%b4*71&_('
+# SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['54.158.242.151','54.175.76.253','127.0.0.1','localhost','3.81.170.173']
+ALLOWED_HOSTS = ['54.158.242.151','54.175.76.253','127.0.0.1','localhost','3.81.170.173',
+                 '54.172.192.216']
 
 
 # Application definition
@@ -89,18 +91,27 @@ WSGI_APPLICATION = 'web.wsgi.application'
 
 load_dotenv()
 
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv("DB_NAME"),
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PASSWORD"),
-        'HOST': os.getenv("DB_HOST"),
-        'PORT': os.getenv("DB_PORT")
+        'NAME': "foreclosure",
+        'USER': "csheng",
+        'PASSWORD': "Orientatio135!",
+        'HOST': "foreclosure-db.cq6va2rd6fnp.us-east-1.rds.amazonaws.com",
+        'PORT': "5432"
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.getenv("DB_NAME"),
+#         'USER': os.getenv("DB_USER"),
+#         'PASSWORD': os.getenv("DB_PASSWORD"),
+#         'HOST': os.getenv("DB_HOST"),
+#         'PORT': os.getenv("DB_PORT")
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
